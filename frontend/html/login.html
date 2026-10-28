@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Iniciar Sesión</title>
+  <!-- CSS de W3Schools (W3.CSS) -->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <style>
+    body {
+      background-color: #f1f1f1;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .auth-card {
+      max-width: 420px;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="auth-card w3-padding">
+    <div class="w3-card-4 w3-white w3-round-large">
+      <!-- Encabezado -->
+      <header class="w3-container w3-teal w3-center w3-round-large" style="border-bottom-left-radius: 0; border-bottom-right-radius: 0;">
+        <h2>Iniciar Sesión</h2>
+      </header>
+
+      <!-- Formulario -->
+      <form id="formLogin" class="w3-container w3-padding-24">
+        <!-- Contenedor para mensajes de respuesta de tu script JS -->
+        <div id="alertaLogin" class="w3-panel w3-round w3-hide"></div>
+
+        <div class="w3-margin-bottom">
+          <label class="w3-text-grey" for="loginUsuario"><b>Usuario o Correo Electrónico</b></label>
+          <input 
+            class="w3-input w3-border w3-round" 
+            type="text" 
+            id="loginUsuario" 
+            name="usuario" 
+            placeholder="ejemplo@correo.com" 
+            required
+          >
+        </div>
+
+        <div class="w3-margin-bottom">
+          <label class="w3-text-grey" for="loginPassword"><b>Contraseña</b></label>
+          <input 
+            class="w3-input w3-border w3-round" 
+            type="password" 
+            id="loginPassword" 
+            name="password" 
+            placeholder="••••••••" 
+            required
+          >
+        </div>
+
+        <div class="w3-margin-top">
+          <button type="submit" id="btnIngresar" class="w3-button w3-block w3-teal w3-round w3-hover-dark-grey">
+            Ingresar
+          </button>
+        </div>
+
+        <div class="w3-center w3-margin-top">
+          <p class="w3-small w3-text-grey">
+            ¿No tienes cuenta? <a href="registro.html" class="w3-text-teal">Regístrate aquí</a>
+          </p>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Tu script de JavaScript para conectar con la base de datos -->
+  <script src="login.js"></script>
+</body>
+</html>

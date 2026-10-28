@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Perfil - Inicio</title>
+  <!-- CSS de W3Schools (W3.CSS) -->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <style>
+    body {
+      background-color: #f7f9fa;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    .main-container {
+      flex: 1;
+      max-width: 650px;
+      margin: auto;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Barra Superior -->
+  <header class="w3-bar w3-teal w3-card-2 w3-padding">
+    <div class="w3-bar-item w3-large">
+      <b>Portal de Usuario</b>
+    </div>
+    <div class="w3-right">
+      <button id="btnCerrarSesion" class="w3-bar-item w3-button w3-red w3-round w3-small">
+        Cerrar Sesión
+      </button>
+    </div>
+  </header>
+
+  <!-- Contenido Central -->
+  <main class="main-container w3-container w3-padding-32">
+    
+    <!-- Tarjeta de Bienvenida y Datos del Usuario -->
+    <div class="w3-card-4 w3-white w3-round-large">
+      <div class="w3-container w3-teal w3-padding-16 w3-round-large" style="border-bottom-left-radius: 0; border-bottom-right-radius: 0;">
+        <h2 class="w3-margin-0">¡Hola, <span id="saludoCliente">Usuario</span>!</h2>
+        <span class="w3-small w3-text-sand">Sesión iniciada correctamente</span>
+      </div>
+
+      <div class="w3-container w3-padding-24">
+        <h4 class="w3-text-grey w3-border-bottom w3-padding-bottom">
+          <b>Datos de tu cuenta</b>
+        </h4>
+
+        <ul class="w3-ul w3-border-0">
+          <li class="w3-padding-12">
+            <span class="w3-text-grey w3-small">ID de Usuario:</span><br>
+            <b id="perfilId">--</b>
+          </li>
+          <li class="w3-padding-12">
+            <span class="w3-text-grey w3-small">Nombre Completo:</span><br>
+            <b id="perfilNombre">Cargando...</b>
+          </li>
+          <li class="w3-padding-12">
+            <span class="w3-text-grey w3-small">Correo Electrónico:</span><br>
+            <b id="perfilEmail">Cargando...</b>
+          </li>
+        </ul>
+
+        <div class="w3-panel w3-light-grey w3-leftbar w3-border-teal w3-margin-top w3-padding">
+          <p class="w3-small w3-text-grey">
+            Esta información proviene directamente de tu registro.
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="w3-container w3-center w3-light-grey w3-padding-16 w3-small w3-text-grey">
+    <p>&copy; 2026 Portal de Cliente</p>
+  </footer>
+
+  <script src="home.js"></script>
+</body>
+</html>

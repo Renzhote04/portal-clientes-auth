@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crear Cuenta</title>
+  <!-- CSS de W3Schools (W3.CSS) -->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <style>
+    body {
+      background-color: #f1f1f1;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .auth-card {
+      max-width: 460px;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="auth-card w3-padding">
+    <div class="w3-card-4 w3-white w3-round-large">
+      <!-- Encabezado -->
+      <header class="w3-container w3-teal w3-center w3-round-large" style="border-bottom-left-radius: 0; border-bottom-right-radius: 0;">
+        <h2>Registro de Usuario</h2>
+      </header>
+
+      <!-- Formulario -->
+      <form id="formRegistro" class="w3-container w3-padding-24">
+        <!-- Contenedor para mensajes de respuesta de tu script JS -->
+        <div id="alertaRegistro" class="w3-panel w3-round w3-hide"></div>
+
+        <div class="w3-margin-bottom">
+          <label class="w3-text-grey" for="regNombre"><b>Nombre Completo</b></label>
+          <input 
+            class="w3-input w3-border w3-round" 
+            type="text" 
+            id="regNombre" 
+            name="nombre" 
+            placeholder="Juan Pérez" 
+            required
+          >
+        </div>
+
+        <div class="w3-margin-bottom">
+          <label class="w3-text-grey" for="regEmail"><b>Correo Electrónico</b></label>
+          <input 
+            class="w3-input w3-border w3-round" 
+            type="email" 
+            id="regEmail" 
+            name="email" 
+            placeholder="correo@ejemplo.com" 
+            required
+          >
+        </div>
+
+        <div class="w3-margin-bottom">
+          <label class="w3-text-grey" for="regPassword"><b>Contraseña</b></label>
+          <input 
+            class="w3-input w3-border w3-round" 
+            type="password" 
+            id="regPassword" 
+            name="password" 
+            placeholder="Mínimo 6 caracteres" 
+            required
+          >
+        </div>
+
+        <div class="w3-margin-bottom">
+          <label class="w3-text-grey" for="regPasswordConfirm"><b>Confirmar Contraseña</b></label>
+          <input 
+            class="w3-input w3-border w3-round" 
+            type="password" 
+            id="regPasswordConfirm" 
+            name="passwordConfirm" 
+            placeholder="Repite la contraseña" 
+            required
+          >
+        </div>
+
+        <div class="w3-margin-top">
+          <button type="submit" id="btnRegistrar" class="w3-button w3-block w3-teal w3-round w3-hover-dark-grey">
+            Registrarse
+          </button>
+        </div>
+
+        <div class="w3-center w3-margin-top">
+          <p class="w3-small w3-text-grey">
+            ¿Ya tienes una cuenta? <a href="login.html" class="w3-text-teal">Inicia sesión</a>
+          </p>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Tu script de JavaScript para conectar con la base de datos -->
+  <script src="registro.js"></script>
+</body>
+</html>
